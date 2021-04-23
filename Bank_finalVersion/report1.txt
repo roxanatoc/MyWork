@@ -1,0 +1,6 @@
+Id action: Action name: Username:
+1        Add client      ana@yahoo.com
+2        View client      ana@yahoo.com
+3        Update client      ana@yahoo.com
+6        Process bill      ana@yahoo.com
+7        View account      ana@yahoo.com

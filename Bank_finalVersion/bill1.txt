@@ -1,0 +1,4 @@
+Id account: 12
+The paid utility is: electricitate
+The amount paid is: 20.0 lei
+Date: 24-11-2020 18:55:44

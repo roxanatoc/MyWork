@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace=" fragments2 :: head"></head>
+<body class="container">
+
+<nav th:replace="fragments2 :: navigation"></nav>
+<form method="post" action="/users/create">
+    <div class="form-group">
+        <label>Username
+            <input th:field="${user.username}" class="form-control">
+        </label>
+        <p class="error" th:errors="${user.username}"></p>
+    </div>
+    <div class="form-group">
+        <label>Password
+            <input th:field="${user.password}" class="form-control">
+        </label>
+        <p class="error" th:errors="${user.password}"></p>
+    </div>
+
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-success">
+    </div>
+
+</form>
+</body>
+</html>

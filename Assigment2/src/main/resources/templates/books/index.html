@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace=" fragments :: head"></head>
+<body class="container">
+
+    <nav th:replace="fragments :: navigation"></nav>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+            </tr>
+        </thead>
+
+        <tr th:each="book : ${books}">
+            <td><a th:href="'/books/detail?bookId=' + ${book.id}" th:text="${book.name}"></a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
